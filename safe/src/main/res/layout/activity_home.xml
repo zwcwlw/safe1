@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:background="@mipmap/blue_bkg"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/iv_home_logo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:background="@mipmap/safehome2"
+            android:scaleType="center"
+            android:src="@mipmap/setting_home">
+        </ImageButton>
+
+        <TextView
+            android:id="@+id/tv_home_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="100dp"
+            android:layout_marginTop="20dp"
+            android:text="@string/safe_home_title"
+            android:singleLine="true"
+            android:textColor="@color/back_orange"
+            android:textSize="@dimen/home_activity_title" />
+        <!--改为自定义TextView的路径名-->
+        <com.zwcwlw.safe.ui.FocusedTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_home_title"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="20dp"
+            android:layout_toRightOf="@id/iv_home_logo"
+            android:ellipsize="marquee"
+            android:focusableInTouchMode="true"
+            android:singleLine="true"
+            android:text="@string/safe_home_desction"
+            android:textColor="@color/back_blue"
+            android:textSize="@dimen/home_title_desction" />
+    </RelativeLayout>
+
+    <GridView
+        android:id="@+id/gv_home_item"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:numColumns="2"></GridView>
+
+</LinearLayout>

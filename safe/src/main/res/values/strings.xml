@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">安全盾</string>
+    <string name="url">http://obg5ecz7i.bkt.clouddn.com/jsonupdatainfo.json</string>
+    <string name="safe_home_title">安全盾-捍卫手机安全</string>
+    <string name="safe_home_desction">手机安全盾的交流邮箱:zwcwlw@126.com欢迎提供好的建议</string>
+    <string name="sjfd">手机防盗</string>
+    <string name="share_setSite">王宝强宣布离婚</string>
+    <string name="share_settitle">宝强哥要挺住</string>
+    <string name="share_setcoment">儿子怕是要做个亲子鉴定啊</string>
+    <string name="share_settext">赔了夫人又折兵？宝强你要挺住啊！！！！</string>
+    <string name="sjfd_desc">远程定位手机</string>
+    <string name="share_seturl">http://ent.163.com/special/wbqlh/wbqlh.html</string>
+</resources>

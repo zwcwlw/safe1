@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        style="@style/setup_title_style"
+        android:text="手机卡绑定" />
+
+    <TextView
+        style="@style/setup_desc_title_style"
+        android:text="通过手机绑定SIM卡:" />
+
+    <TextView
+        style="@style/setup_desc_style"
+        android:text="如果检测到手机SIM卡发生变化，就会发送报警短信息" />
+
+    <TextView
+        style="@style/setup_desc_style"
+        android:text="请不要拦截安全盾访问SIM卡系统权限" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/setup_sim_selector"
+        android:clickable="true">
+
+        <TextView
+            style="@style/setup_desc_title_style"
+            android:layout_centerVertical="true"
+            android:text="点击绑定/解绑-SIM卡" />
+
+        <ImageView
+           android:padding="2dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@mipmap/unlock" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="2dp"
+            android:src="@mipmap/switcher_gps_off"
+
+            />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="2dp"
+            android:src="@mipmap/switcher_gps_on" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="2dp"
+            android:src="@mipmap/switcher_gps_off" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="2dp"
+            android:src="@mipmap/switcher_gps_off" />
+
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:src="@mipmap/setup2_sim" />
+
+        <Button
+            android:id="@+id/bt_pre_two"
+            style="@style/setup_button_pre" />
+
+        <Button
+            android:id="@+id/bt_next_two"
+            style="@style/setup_button_next" />
+    </RelativeLayout>
+</LinearLayout>

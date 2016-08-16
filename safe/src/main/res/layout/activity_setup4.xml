@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        style="@style/setup_title_style"
+        android:text="恭喜你，设置完成" />
+
+    <TextView
+        style="@style/setup_desc_title_style"
+        android:text="已经开启安全盾卫士对手机的保护：" />
+
+
+    <TextView
+        style="@style/setup_desc_style"
+        android:text="手机定位和防盗保护已经开启" />
+
+    <TextView
+        style="@style/setup_desc_style"
+        android:text="请牢记安全号码和密码" />
+
+    <TextView
+        style="@style/setup_desc_style"
+        android:text="作者：ZWCWLW" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="2dp"
+            android:src="@mipmap/switcher_gps_off"
+
+            />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="2dp"
+            android:src="@mipmap/switcher_gps_off" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="2dp"
+            android:src="@mipmap/switcher_gps_off" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="2dp"
+            android:src="@mipmap/switcher_gps_on" />
+
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:src="@mipmap/setup_scan_ok" />
+
+        <Button
+            android:id="@+id/bt_pre_foru"
+            style="@style/setup_button_pre" />
+
+        <Button
+            android:id="@+id/bt_next_foru"
+            style="@style/setup_button_next"
+            android:text="设置完成" />
+    </RelativeLayout>
+</LinearLayout>

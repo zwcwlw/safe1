@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        style="@style/setup_title_style"
+        android:text="手机防盗" />
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp">
+
+        <TextView
+            android:textColor="@color/record_green"
+            style="@style/setup_desc_title_style"
+            android:text="安全号码" />
+
+        <TextView
+            style="@style/setup_desc_title_style"
+            android:layout_alignParentRight="true"
+            android:hint="16888888888" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/shouyi_red" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp">
+
+        <TextView
+            android:textColor="@color/record_green"
+            style="@style/setup_desc_title_style"
+            android:text="防盗保护状态" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:src="@mipmap/lock" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/shouyi_red" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp">
+
+        <TextView
+            style="@style/setup_desc_title_style"
+            android:textColor="@color/record_green"
+            android:text="重新进入设置向导界面" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/shouyi_red" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/bg_four_conent">
+
+        <TextView
+            style="@style/setup_desc_title_style"
+            android:text="请牢记功能指令" />
+    </LinearLayout>
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/shouyi_red" />
+
+    <TextView
+        android:drawableLeft="@mipmap/setup5_desc"
+        style="@style/setup_desc_title_style"
+        android:text="GPS追踪：#*location*#" />
+
+    <TextView
+        android:drawableLeft="@mipmap/setup5_desc"
+        style="@style/setup_desc_title_style"
+        android:text="播放报警音乐：#*alarm*#" />
+
+    <TextView
+        android:drawableLeft="@mipmap/setup5_desc"
+        style="@style/setup_desc_title_style"
+        android:text="远程删除数据：#*wipedata*#" />
+
+    <TextView
+        android:drawableLeft="@mipmap/setup5_desc"
+        style="@style/setup_desc_title_style"
+        android:text="远程锁屏：#*lockscreen*#" />
+    <LinearLayout
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:id="@+id/ll_setupac5_share"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ssdk_oks_classic_wechatmoments"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/shouyi_red"
+            android:textSize="@dimen/ts14"
+            android:text="分享好友"/>
+    </LinearLayout>
+
+
+</LinearLayout>

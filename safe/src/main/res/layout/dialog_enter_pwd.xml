@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="300dp"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="3dp">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/back_orange"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:padding="10dp">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="2dp"
+            android:src="@mipmap/dialog_title_default_icon" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:text="请输入密码进入手机防盗"
+            android:textSize="@dimen/ts18" />
+    </LinearLayout>
+
+    <EditText
+        android:textColor="@color/text_bankname"
+        android:id="@+id/et_enter_pwd"
+        android:layout_width="280dp"
+        android:layout_height="wrap_content"
+        android:hint="请输入密码进入"
+        android:inputType="textPassword" />
+
+    <LinearLayout
+        android:layout_width="280dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/bt_enter_ok"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/dg_confirm_selector"
+            android:text="确认"
+            android:textColor="@color/white" />
+
+        <Button
+            android:id="@+id/bt_enter_cancle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textColor="@color/black"
+            android:background="@drawable/dg_cancel_selector"
+            android:text="取消" />
+    </LinearLayout>
+</LinearLayout>

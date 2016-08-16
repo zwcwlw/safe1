@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        style="@style/setup_title_style"
+        android:text="设置安全号码" />
+
+    <TextView
+        style="@style/setup_desc_title_style"
+        android:text="SIM卡如果发生变化:" />
+
+    <TextView
+        style="@style/setup_desc_style"
+        android:text="报警短信就会发给你的安全号码" />
+
+    <TextView
+        style="@style/setup_desc_style"
+        android:text="请在下方设置你的安全号码" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <EditText
+            android:hint="请输入安全号码"
+            android:textColor="@color/renzhen_green"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <Button
+            android:background="@drawable/setup_sim_selector"
+            android:layout_width="match_parent"
+            android:text="请选择安全号码"
+            android:textSize="@dimen/ts18"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="2dp"
+            android:src="@mipmap/switcher_gps_off"
+
+            />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="2dp"
+            android:src="@mipmap/switcher_gps_off" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="2dp"
+            android:src="@mipmap/switcher_gps_on" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="2dp"
+            android:src="@mipmap/switcher_gps_off" />
+
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:src="@mipmap/setup_message" />
+
+        <Button
+            android:id="@+id/bt_pre_three"
+            style="@style/setup_button_pre" />
+
+        <Button
+            android:id="@+id/bt_next_three"
+            style="@style/setup_button_next" />
+    </RelativeLayout>
+</LinearLayout>
